@@ -13,21 +13,24 @@ Before running the Language Learning App, ensure you have the following installe
 
 ## Installation
 
-Clone the repository:
+### Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/language-learning-app.git
-cd language-learning-app
+git clone https://github.com/BaseMax/LanguageLearningGraphQLPHP.git
+cd LanguageLearningGraphQLPHP
 ```
 
-Install dependencies:
+### Install dependencies:
 
 ```bash
 composer install
 ```
 
-Configure the environment:
+### Configure the environment:
+
 Copy the `.env.example` file to `.env` and set the required environment variables such as database credentials and Redis configuration.
+
+### Database
 
 Run database migrations to set up the required tables:
 
@@ -46,16 +49,19 @@ php -S localhost:8000 -t public
 The Language Learning App API provides the following queries and mutations:
 
 ### Queries
-courses: [Course!]!: Get a list of available language courses.
-course(id: ID!): Course: Get a specific language course by its ID.
-exercises(courseId: ID!): [Exercise!]!: Get vocabulary exercises for a specific language course.
-exercise(id: ID!): Exercise: Get a specific vocabulary exercise by its ID.
-assessments: [Assessment!]!: Get language proficiency assessments.
-assessment(id: ID!): Assessment: Get a specific language proficiency assessment by its ID.
-Mutations
-enroll(courseId: ID!): Enrollment: Enroll in a language course.
-submitExercise(exerciseId: ID!, answer: String!): ExerciseResult: Submit an answer for a vocabulary exercise.
-submitAssessment(assessmentId: ID!, answers: [AssessmentAnswerInput!]!): AssessmentResult: Submit answers for a language proficiency assessment.
+
+- `courses: [Course!]!`: Get a list of available language courses.
+- `course(id: ID!): Course`: Get a specific language course by its ID.
+- `exercises(courseId: ID!): [Exercise!]!`: Get vocabulary exercises for a specific language course.
+- `exercise(id: ID!): Exercise`: Get a specific vocabulary exercise by its ID.
+- `assessments: [Assessment!]!`: Get language proficiency assessments.
+- `assessment(id: ID!): Assessment`: Get a specific language proficiency assessment by its ID.
+
+### Mutations
+
+- `enroll(courseId: ID!): Enrollment`: Enroll in a language course.
+- `submitExercise(exerciseId: ID!, answer: String!): ExerciseResult`: Submit an answer for a vocabulary exercise.
+- `submitAssessment(assessmentId: ID!, answers: [AssessmentAnswerInput!]!): AssessmentResult`: Submit answers for a language proficiency assessment.
 
 ## Authentication
 
