@@ -91,7 +91,7 @@ phpunit
 
 ## Documentation
 
-For more information on the API's schema, queries, and mutations, you can access the GraphQL documentation tool at http://localhost:8000/graphql-playground after starting the development server.
+For more information on the API's schema, queries, and mutations, you can access the GraphQL documentation tool at `http://localhost:8000/graphql-playground` after starting the development server.
 
 ## Contribution
 
@@ -99,7 +99,7 @@ Contributions to the Language Learning App project are welcome. If you find any 
 
 ## License
 
-Copyright [Year], [Your Name]. This project is licensed under the MIT License.
+This project is licensed under the GPL-3.0 License.
 
 Enjoy building your Language Learning App with the GraphQL API in PHP 8!
 
