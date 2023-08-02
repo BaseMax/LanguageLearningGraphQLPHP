@@ -2,7 +2,7 @@
     "name": "max/language-learning-graph-qlphp",
     "autoload": {
         "psr-4": {
-            "Max\\LanguageLearningGraphQlphp\\": "src/"
+            "App\\": "app/"
         }
     },
     "authors": [
