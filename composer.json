@@ -1,0 +1,15 @@
+{
+    "name": "max/language-learning-graph-qlphp",
+    "autoload": {
+        "psr-4": {
+            "Max\\LanguageLearningGraphQlphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ali Ahmadi",
+            "email": "aliahmadi.github@gmail.com"
+        }
+    ],
+    "require": {}
+}
