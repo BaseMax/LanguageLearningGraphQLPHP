@@ -35,7 +35,7 @@ Copy the `.env.example` file to `.env` and set the required environment variable
 Run database migrations to set up the required tables:
 
 ```bash
-php artisan migrate
+php migrate
 ```
 
 Start the development server:
