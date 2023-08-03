@@ -6,3 +6,5 @@ $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 
 $kernel = new App\Kernel();
+
+$kernel->handle();

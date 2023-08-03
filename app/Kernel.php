@@ -16,4 +16,9 @@ class Kernel
         $this->db = Database::getDB();
         $this->config = Config::env();
     }
+
+    public function handle(): void
+    {
+
+    }
 }
