@@ -7,4 +7,4 @@ $dotenv->load();
 
 $kernel = new App\Kernel();
 
-$kernel->handle();
+echo $kernel->handle();

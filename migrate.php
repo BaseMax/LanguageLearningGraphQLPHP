@@ -13,14 +13,14 @@ $users_table_sql = "CREATE TABLE IF NOT EXISTS users(
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     token VARCHAR(255)
-)";
+);";
 
 $courses_table_sql = "CREATE TABLE IF NOT EXISTS courses (
     id VARCHAR(255) PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     description VARCHAR(255) NOT NULL,
     language VARCHAR(255) NOT NULL
-)";
+);";
 
 $exercises_table_sql = "CREATE TABLE IF NOT EXISTS exercises (
     id VARCHAR(255) PRIMARY KEY,
@@ -28,14 +28,14 @@ $exercises_table_sql = "CREATE TABLE IF NOT EXISTS exercises (
     question VARCHAR(255) NOT NULL,
     answer VARCHAR(255) NOT NULL,
     FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
-)";
+);";
 
 $assessment_table_sql = "CREATE TABLE IF NOT EXISTS assessment (
     id VARCHAR(255) PRIMARY KEY,
     user_id VARCHAR(255) NOT NULL,
     course_id VARCHAR(255) NOT NULL,
     score INT DEFAULT 0
-)";
+);";
 
 $dbname = $_ENV["DB_NAME"];
 $host = $_ENV["DB_HOST"];
