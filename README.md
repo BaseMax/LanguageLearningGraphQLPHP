@@ -6,7 +6,7 @@ This project is a Language Learning App that provides a GraphQL API for language
 
 Before running the Language Learning App, ensure you have the following installed:
 
-- PHP 8 or higher
+- PHP 8
 - Composer (Dependency Manager for PHP)
 - MySQL or any compatible database server
 
