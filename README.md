@@ -9,7 +9,6 @@ Before running the Language Learning App, ensure you have the following installe
 - PHP 8 or higher
 - Composer (Dependency Manager for PHP)
 - MySQL or any compatible database server
-- Redis (for caching)
 
 ## Installation
 
@@ -35,13 +34,14 @@ Copy the `.env.example` file to `.env` and set the required environment variable
 Run database migrations to set up the required tables:
 
 ```bash
-php migrate
+php migrate.php
 ```
 
 Start the development server:
 
 ```bash
-php -S localhost:8000 -t public
+cd public/
+php -S localhost:8000 -t index.php
 ```
 
 ## GraphQL Schema
