@@ -26,8 +26,8 @@ class Kernel
         $this->config = Config::env();
         $this->data = Request::data();
         $this->schema = new Schema([
-            "query" => "",
-            "mutation" => ""
+            "query" => (include "./Queries/query.php")["query"],
+            "mutation" => (include "./Mutations/mutation.php")["mutation"]
         ]);
         $this->request = $this->data["query"];
         $this->variables = isset($this->data['variables']) ? $this->data['variables'] : null;

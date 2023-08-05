@@ -59,8 +59,8 @@ The Language Learning App API provides the following queries and mutations:
 
 ### Mutations
 
-- `enroll(courseId: ID!): Enrollment`: Enroll in a language course.
-- `submitExercise(exerciseId: ID!, answer: String!): ExerciseResult`: Submit an answer for a vocabulary exercise.
+- `enroll(courseId: ID!): Course`: Enroll in a language course.
+- `submitExercise(exerciseId: ID!, answer: String!): Exercise`: Submit an answer for a vocabulary exercise.
 - `submitAssessment(assessmentId: ID!, answers: [AssessmentAnswerInput!]!): AssessmentResult`: Submit answers for a language proficiency assessment.
 
 ## Authentication
