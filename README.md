@@ -81,14 +81,6 @@ The API handles errors using GraphQL's built-in error handling mechanisms. If an
 
 To improve performance, the API utilizes Redis caching for certain queries and data. Cached data will be served when available, reducing the load on the database.
 
-## Testing
-
-The API comes with a suite of unit tests and integration tests. To run the tests, execute the following command:
-
-```bash
-phpunit
-```
-
 ## Documentation
 
 For more information on the API's schema, queries, and mutations, you can access the GraphQL documentation tool at `http://localhost:8000/graphql-playground` after starting the development server.
@@ -103,4 +95,4 @@ This project is licensed under the GPL-3.0 License.
 
 Enjoy building your Language Learning App with the GraphQL API in PHP 8!
 
-Copyright 2023, Max Base
+Copyright 2023, Max Base, Ali Ahmadi
