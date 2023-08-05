@@ -41,7 +41,7 @@ Start the development server:
 
 ```bash
 cd public/
-php -S localhost:8000 -t index.php
+php -S localhost:8000 index.php
 ```
 
 ## GraphQL Schema
