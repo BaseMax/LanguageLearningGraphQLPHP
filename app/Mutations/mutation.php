@@ -107,6 +107,8 @@ $mutationType = new ObjectType([
                 ]
             ],
             "resolve" => function ($rootValue, $args, $context) {
+                $status = (new GraphQL($context["db"]))->submitExercise($args["exercise_id"], $args["answer"]);
+                return $status;
             }
         ]
     ]

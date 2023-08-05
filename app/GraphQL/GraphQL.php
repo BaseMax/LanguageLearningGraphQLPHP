@@ -62,7 +62,7 @@ class GraphQL
     public function getAssessmentById(string $id): array
     {
         $stmt = $this->db->prepare(
-            "SELECT * FROM assessments WHERE id = ?"
+            "SELECT * FROM assessments WHERE id = ?;"
         );
         $stmt->execute([$id]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -80,5 +80,13 @@ class GraphQL
             $user_id
         ]);
         return $this->getAssessmentById($id);
+    }
+
+    public function submitExercise(string $exercise_id, string $answer): bool
+    {
+        $exercise = $this->getExercise($exercise_id);
+        if ($exercise["answer"] == $answer)
+            return true;
+        return false;
     }
 }
