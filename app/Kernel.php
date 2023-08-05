@@ -20,6 +20,7 @@ class Kernel
     private $schema;
     private $rootValue = null;
     private $json_header = "Content-Type: application/json";
+
     public function __construct()
     {
         $this->db = Database::getDB();
