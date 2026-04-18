@@ -15,7 +15,7 @@
         "firebase/php-jwt": "^7.0",
         "vlucas/phpdotenv": "^5.5",
         "webonyx/graphql-php": "^15.5",
-        "phpunit/phpunit": "^10.2",
+        "phpunit/phpunit": "^12.5",
         "guzzlehttp/guzzle": "^7.7"
     }
 }
